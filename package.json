@@ -1,0 +1,26 @@
+{
+  "name": "crosshair",
+  "description": "Overlay crosshair on your fullscreen window.",
+  "author": "og24715",
+  "version": "1.0.0",
+  "main": "main.js",
+  "license": "MIT",
+  "build": {
+    "appId": "org.og24715.crosshair",
+    "mac": {
+      "category": "public.app-category.utilities"
+    }
+  },
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "build:mac": "electron-builder --mac --x64",
+    "build:win": "electron-builder --win --x64",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "devDependencies": {
+    "electron": "^3.0.13",
+    "electron-builder": "^20.38.4"
+  }
+}
